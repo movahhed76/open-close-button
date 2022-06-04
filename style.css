@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+body {
+  background-color: rgb(236, 125, 20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+.toggle-container {
+  background-color: rgb(236, 125, 20);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  width: 900px;
+}
+.toggle-h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.toggle-text {
+  font-size: 18px;
+  display: none;
+}
+.toggle-container.active .toggle-text {
+  display: block;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#icone {
+  color: red;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 25px;
+}
+.close {
+  display: none;
+}
+.toggle-container.active .toggle-button .close{
+    display: block;
+}
+.toggle-container.active .toggle-button .open{
+    display: none;
+}
